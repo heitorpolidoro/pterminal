@@ -1,4 +1,4 @@
-class Cursor(object):
+class Cursor():
     """
     Represents a Cursor object that allows manipulation of the terminal cursor.
 
@@ -10,12 +10,12 @@ class Cursor(object):
 
     @staticmethod
     def hide() -> None:
-        # Hide cursor
+        """Hide cursor"""
         print("\033[?25l", end="")
         Cursor._state = "HIDE"
 
     @staticmethod
     def show() -> None:
-        # Show cursor
+        """Show cursor"""
         print("\033[?25h", end="")
         Cursor._state = "SHOW"
