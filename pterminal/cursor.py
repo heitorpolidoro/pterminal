@@ -1,5 +1,11 @@
 class Cursor(object):
-    _state = "SHOW"
+    """
+    Represents a Cursor object that allows manipulation of the terminal cursor.
+
+    This class provides static methods to:
+     - Show or hide the cursor in a terminal
+    """
+    _state: str = "SHOW"
 
     @staticmethod
     def hide() -> None:
