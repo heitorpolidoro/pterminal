@@ -4,11 +4,13 @@ import pytest
 
 from pterminal.cursor import Cursor
 
+
 @pytest.fixture
 def mock_print():
     # Mock the built-in print function
-    with patch('builtins.print') as mock_print:
+    with patch("builtins.print") as mock_print:
         yield mock_print
+
 
 def test_show_hide_cursor(mock_print):
     assert Cursor._state == "SHOW"

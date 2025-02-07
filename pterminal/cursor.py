@@ -5,6 +5,7 @@ class Cursor(object):
     This class provides static methods to:
      - Show or hide the cursor in a terminal
     """
+
     _state: str = "SHOW"
 
     @staticmethod
