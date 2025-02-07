@@ -1,4 +1,4 @@
-class Cursor():
+class Cursor:
     """
     Represents a Cursor object that allows manipulation of the terminal cursor.
 
