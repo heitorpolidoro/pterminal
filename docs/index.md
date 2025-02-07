@@ -1,4 +1,4 @@
-# PROJECT_NAME
+# pterminal
 
 Project description
 

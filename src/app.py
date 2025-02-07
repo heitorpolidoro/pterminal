@@ -30,5 +30,5 @@ def sentry_init():  # pragma: no cover
         logger.info("Sentry initialized")
 
 
-app = Flask("PROJECT_NAME")
+app = Flask("pterminal")
 sentry_init()
